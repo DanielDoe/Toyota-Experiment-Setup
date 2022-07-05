@@ -286,3 +286,115 @@ CARLA uses the Autodesk FBX SDK for converting FBX to OBJ in the import process 
 This software contains Autodesk® FBX® code developed by Autodesk, Inc. Copyright 2020 Autodesk, Inc. All rights, reserved. Such code is provided "as is" and Autodesk, Inc. disclaims any and all warranties, whether express or implied, including without limitation the implied warranties of merchantability, fitness for a particular purpose or non-infringement of third party rights. In no event shall Autodesk, Inc. be liable for any direct, indirect, incidental, special, exemplary, or consequential damages (including, but not limited to, procurement of substitute goods or services; loss of use, data, or profits; or business interruption) however caused and on any theory of liability, whether in contract, strict liability, or tort (including negligence or otherwise) arising in any way out of such code."
   
   ## Vehicle selection process
+OpenAI's `gym` is a fantastic tool for creating custom reinforcement learning agents. It includes a number of pre-built environments, such as CartPole and MountainCar, as well as a plethora of free Atari games to play with.
+
+These environments are excellent for learning, but we eventually want to set up an agent to solve a specific problem (vehicle selection for HD map update). To accomplish this, we must first create a custom environment tailored to our problem domain. We will later build a custom vehicle-server environment to simulate the vehicle selection process.
+
+Let us begin by learning what an environment is. An environment contains all of the functionality required to run an agent and allow it to learn. The following gym interface must be implemented in each environment:
+
+```shell
+import gym
+from gym import spaces
+
+class CustomEnv(gym.Env):
+  """Custom Environment that follows gym interface"""
+  metadata = {'render.modes': ['human']}
+
+  def __init__(self, arg1, arg2, ...):
+    super(CustomEnv, self).__init__()
+    # Define action and observation space
+    # They must be gym.spaces objects
+    # Example when using discrete actions:
+    self.action_space = spaces.Discrete(N_DISCRETE_ACTIONS)
+    # Example for using image as input:
+    self.observation_space = spaces.Box(low=0, high=255, shape=
+                    (HEIGHT, WIDTH, N_CHANNELS), dtype=np.uint8)
+
+  def step(self, action):
+    # Execute one time step within the environment
+    ...
+  def reset(self):
+    # Reset the state of the environment to an initial state
+    ...
+  def render(self, mode='human', close=False):
+    # Render the environment to the screen
+    ...
+```
+
+In the constructor, we first define the type and shape of our action space, which will contain all of the actions that an agent can perform in its environment. Similarly, we will define the observation space, which will contain all of the environment's data that the agent will observe.
+
+Our reset method will be called on a regular basis to return the environment to its initial state. This is followed by a series of steps through the environment, where the model will provide action and must be executed, and the subsequent observation returned. This is also the location where rewards are computed; more on that later.
+
+Finally, the render method can be called on a regular basis to print a representation of the environment. This function call could be as simple as a print statement or as complex as OpenGL rendering of a 3D environment. We'll stick with print statements for this example.
+
+#### Vehicle-Server Environment
+To demonstrate how this all works, we will create a vehicle-server environment. We will then train our agent to select the optimal vehicle-server pair within the environment for HD map updates. Let’s get started!
+
+We must first consider how a server perceives its surroundings. What observations would it make prior to deciding on a vehicle to use for our HD map updates?
+
+A server would most likely examine a vehicle information action chart, which could be overlaid with a number of technical indicators. It would then combine this visual information with their prior knowledge of similar vehicle actions to determine which vehicle is most likely to be chosen.
+
+Let us now translate this into how our agent should perceive its surroundings.
+
+![observation_space](Docs/img/observation_space.jpg "observation_space")
+
+Our `observation space` includes all of the input variables that we want our agent to consider before making a decision. In this example, we want our agent to "see" the vehicle-server data points from our Carla datasets `(vehicle location, server location, image size, detected objects)`.
+
+The intuition here is that we want our agent to consider the vehicle-server pair's actions leading up to the current system latency for each time step in order to make an informed decision for the next action.
+
+Once a server has assessed its surroundings, it must take action. In the case of our agent, its `action space` will have three options: `pairing a vehicle and a server, unpairing a vehicle and a server, or doing nothing`.
+
+But this isn't enough; we also need to know how many of a given vehicle pair with or unpair from the server each time. We can create an action space with a discrete number of `action types (pair, unpair, and hold)` and a continuous spectrum of amounts to pair and unpair using the gym's Box space.
+
+You'll notice that the amount isn't required for the hold action but is provided anyway. Our agent is unaware of this at first, but should learn that the amount is unnecessary for this action over time.
+
+![observation_space](Docs/img/reward.jpg "observation_space")
+
+The reward is the last thing to consider before implementing our environment. We'd like to reduce the `latency of our vehicle-server selection process`. We will set the reward at each time step to be equal to the time it takes to make a vehicle-server selection decision multiplied by some fraction of the total number of time steps.
+
+The goal is to delay rewarding the agent too quickly in the early stages, allowing it to explore sufficiently before optimizing a single strategy too deeply. It will also reward agents who maintain a lower latency for a longer period of time rather than those who reduce latency quickly using unsustainable strategies.
+
+#### Implementation
+It's time to put our environment into action now that we've defined our `observation space, action space, and rewards`. First, in the environment's constructor, we must define the action space and observation space. The environment expects a pandas data frame containing the stock data to be learned from to be passed in.
+
+```shell
+class VehicleServerEnvironment(gym.Env):
+  """A stock trading environment for OpenAI gym"""
+  metadata = {'render.modes': ['human']}
+  def __init__(self, df):
+    super(StockTradingEnv, self).__init__()
+    self.df = df
+    self.reward_range = (0, MAX_LATENCY) 
+    # Actions of the format pair x%, unpair x%, Hold, etc.
+    self.action_space = spaces.Box(
+      low=np.array([0, 0]), high=np.array([3, 1]), dtype=np.float16)
+    # Prices contains the OHCL values for the last five prices
+    self.observation_space = spaces.Box(
+      low=0, high=1, shape=(6, 6), dtype=np.float16)
+```
+Next, we'll write the reset method, which is called whenever a new environment is created or to reset the state of an existing environment. We'll set each agent's start time and initialize its open positions to an empty list here.
+
+```shell
+def reset(self):
+  # Reset the state of the environment to an initial state
+  self.latency = INITIAL_LATENCY
+  self.total_latency = INITIAL_LATENCY
+  self.max_latency = INITIAL_LATENCY
+  self.vehicles_held = 0
+  self.time_basis = 0
+  self.total_vehicles_unpaired = 0
+  self.total_unpair_vehicles = 0
+ 
+  # Set the current step to a random point within the data frame
+  self.current_step = random.randint(0, len(self.df.loc[:, 'Open'].values) - 6)
+  return self._next_observation()
+```
+We set the current step to a random point within the data frame, because it essentially gives our agent’s more unique experiences from the same data set. The `_next_observation` method compiles the stock data for the last five time steps, appends the agent’s latency information, and scales all the values to between 0 and 1.
+#### Results
+![convergence](Docs/img/convergence.jpg "convergence_result")
+
+![convergence_1](Docs/img/convergence_1.jpg "convergence_1_result")
+
+![learning_rate](Docs/img/lr_latency.jpg "lr_latency_result")
+
+![convergStorage](Docs/img/storage_size.jpg "storage")
