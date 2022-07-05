@@ -52,6 +52,32 @@ Unfortunately we don't have official instructions to build on Mac yet, please ch
 [buildwindowslink]: https://carla.readthedocs.io/en/latest/build_windows/
 [issue150]: https://github.com/carla-simulator/carla/issues/150
 
+Debian CARLA installation
+--------------
+The Debain package is available for both Ubuntu 18.04 and Ubuntu 20.04, however the officially supported platform is Ubuntu 18.04.
+
+1. Set up the Debian repository in the system:
+
+```sh
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1AF1527DE64CB8D9
+sudo add-apt-repository "deb [arch=amd64] http://dist.carla.org/carla $(lsb_release -sc) main"
+```
+
+2. Install CARLA and check for the installation in the /opt/ folder:
+
+```sh
+sudo apt-get update # Update the Debian package index
+sudo apt-get install carla-simulator # Install the latest CARLA version, or update the current installation
+cd /opt/carla-simulator # Open the folder where CARLA is installed
+```
+This repository contains CARLA 0.9.10 and later versions. To install a specific version add the version tag to the installation command:
+
+```sh
+apt-cache madison carla-simulator # List the available versions of Carla
+sudo apt-get install carla-simulator=0.9.10-1 # In this case, "0.9.10" refers to a CARLA version, and "1" to the Debian revision
+```
+Now, let's get started to run carla simulator
+
 ```sh
 # Start carla environment
 cd ~/[carla env directory] # e.g., cd /opt/carla-simulator/
@@ -359,10 +385,10 @@ It's time to put our environment into action now that we've defined our `observa
 
 ```shell
 class VehicleServerEnvironment(gym.Env):
-  """A stock trading environment for OpenAI gym"""
+  """A vehicle server environment for OpenAI gym"""
   metadata = {'render.modes': ['human']}
   def __init__(self, df):
-    super(StockTradingEnv, self).__init__()
+    super(VehicleServerEnv, self).__init__()
     self.df = df
     self.reward_range = (0, MAX_LATENCY) 
     # Actions of the format pair x%, unpair x%, Hold, etc.
@@ -390,6 +416,30 @@ def reset(self):
   return self._next_observation()
 ```
 We set the current step to a random point within the data frame, because it essentially gives our agent’s more unique experiences from the same data set. The `_next_observation` method compiles the stock data for the last five time steps, appends the agent’s latency information, and scales all the values to between 0 and 1.
+
+```shell
+def _next_observation(self):
+  # Get the data points for the last 5 days and scale to between 0-1
+  frame = np.array([
+    self.df.loc[self.current_step: self.current_step +
+                5, 'vehicle_location'].values,
+    self.df.loc[self.current_step: self.current_step +
+                5, 'server_location'].values,
+    self.df.loc[self.current_step: self.current_step +
+                5, 'image_size'].values,
+    self.df.loc[self.current_step: self.current_step +
+                5, 'detected_objects'].values
+   ])
+  # Append additional data and scale each value to between 0-1
+  obs = np.append(frame, [[
+    self.latency / MAX_LATENCY,
+    self.max_total_latency / MAX_LATENCY,
+    self.vehicle_pair / MAX_NUM_VEHICLE,
+    self.time_basis / MAX_NUM_VEHICLE,
+    self.total_vehicle_unpair / MAX_NUM_VEHICLE,
+  ]], axis=0)
+  return obs
+```
 #### Results
 ![convergence](Docs/img/convergence.jpg "convergence_result")
 
