@@ -28,10 +28,6 @@ Use ARROWS or WASD keys for control.
     R            : toggle recording images to disk
 
     F2           : toggle RSS visualization mode
-    F3           : increase log level
-    F4           : decrease log level
-    F5           : increase map log level
-    F6           : decrease map log level
     B            : toggle RSS Road Boundaries Mode
     G            : RSS check drop current route
     T            : toggle RSS
@@ -91,10 +87,6 @@ try:
     from pygame.locals import K_ESCAPE
     from pygame.locals import K_F1
     from pygame.locals import K_F2
-    from pygame.locals import K_F3
-    from pygame.locals import K_F4
-    from pygame.locals import K_F5
-    from pygame.locals import K_F6
     from pygame.locals import K_LEFT
     from pygame.locals import K_RIGHT
     from pygame.locals import K_SLASH
@@ -416,20 +408,6 @@ class VehicleControl(object):
                 elif event.key == K_F2:
                     if self._world and self._world.rss_sensor:
                         self._world.rss_sensor.toggle_debug_visualization_mode()
-                elif event.key == K_F3:
-                    if self._world and self._world.rss_sensor:
-                        self._world.rss_sensor.decrease_log_level()
-                        self._restrictor.set_log_level(self._world.rss_sensor.log_level)
-                elif event.key == K_F4:
-                    if self._world and self._world.rss_sensor:
-                        self._world.rss_sensor.increase_log_level()
-                        self._restrictor.set_log_level(self._world.rss_sensor.log_level)
-                elif event.key == K_F5:
-                    if self._world and self._world.rss_sensor:
-                        self._world.rss_sensor.decrease_map_log_level()
-                elif event.key == K_F6:
-                    if self._world and self._world.rss_sensor:
-                        self._world.rss_sensor.increase_map_log_level()
                 elif event.key == K_b:
                     if self._world and self._world.rss_sensor:
                         if self._world.rss_sensor.sensor.road_boundaries_mode == carla.RssRoadBoundariesMode.Off:
