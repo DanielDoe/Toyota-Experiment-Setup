@@ -1,0 +1,5 @@
+# ninja log v5
+0	3270	1637377269001021416	/home/doe/YOLOX/build/temp.linux-x86_64-3.8/home/doe/YOLOX/yolox/layers/csrc/cocoeval/cocoeval.o	66fc9dff3532a710
+0	3950	1637377269681021272	/home/doe/YOLOX/build/temp.linux-x86_64-3.8/home/doe/YOLOX/yolox/layers/csrc/vision.o	9a5e1f09b1d2c5c
+0	3986	1637662656416700504	/home/doe/Documents/hd-map-optimization/build/temp.linux-x86_64-3.8/home/doe/Documents/hd-map-optimization/yolox/layers/csrc/cocoeval/cocoeval.o	e025ef8b0420f5f5
+0	4637	1637662657068685853	/home/doe/Documents/hd-map-optimization/build/temp.linux-x86_64-3.8/home/doe/Documents/hd-map-optimization/yolox/layers/csrc/vision.o	903916b5759d8777
