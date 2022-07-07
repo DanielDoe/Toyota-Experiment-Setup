@@ -1,54 +1,54 @@
-Carla Simulation/Build
-Carla Simulation/Dist
-Carla Simulation/Doxygen
-Carla Simulation/Deprecated/PythonClient/dist
-Carla Simulation/TrafficManager/build
-Carla Simulation/Util/Build
-Carla Simulation/Install
-Carla Simulation/Plugins
-Carla Simulation/!Unreal/CarlaUE4/Plugins
+Experiment files/Carla Simulation/Build
+Experiment files/Carla Simulation/Dist
+Experiment files/Carla Simulation/Doxygen
+Experiment files/Carla Simulation/Deprecated/PythonClient/dist
+Experiment files/Carla Simulation/TrafficManager/build
+Experiment files/Carla Simulation/Util/Build
+Experiment files/Carla Simulation/Install
+Experiment files/Carla Simulation/Plugins
+Experiment files/Carla Simulation/!Unreal/CarlaUE4/Plugins
 
-Carla Simulation//ExportedMaps
-Carla Simulation//Import/*
-Carla Simulation/!/Import/README.md
+Experiment files/Carla Simulation/ExportedMaps
+Experiment files/Carla Simulation//Import/*
+Experiment files/Carla Simulation/!/Import/README.md
 
-Carla Simulation/*.VC.db
-Carla Simulation/*.VC.opendb
-Carla Simulation/*.a
-Carla Simulation/*.egg-info
-Carla Simulation/*.kdev4
-Carla Simulation/*.log
-Carla Simulation/*.o
-Carla Simulation/*.pb.cc
-Carla Simulation/*.pb.h
-Carla Simulation/*.pid
-Carla Simulation/*.pri
-Carla Simulation/*.pro
-Carla Simulation/*.py[cod]
-Carla Simulation/*.sln
-Carla Simulation/*.so
-Carla Simulation/*.stackdump
-Carla Simulation/*.sublime-workspace
-Carla Simulation/*.workspace
-Carla Simulation/*CodeCompletionFolders.txt
-Carla Simulation/*CodeLitePreProcessor.txt
-Carla Simulation/.aria2c.input
-Carla Simulation/.codelite
-Carla Simulation/.gdb_history
-Carla Simulation/.gtest
-Carla Simulation/.idea
-Carla Simulation/.tags*
-Carla Simulation/.vs
-Carla Simulation/.vscode
-Carla Simulation/__pycache__
-Carla Simulation/_benchmarks_results
-Carla Simulation/_images*
-Carla Simulation/_out*
-Carla Simulation/_site
-Carla Simulation/core
-Carla Simulation/profiler.csv
+Experiment files/Carla Simulation/*.VC.db
+Experiment files/Carla Simulation/*.VC.opendb
+Experiment files/Carla Simulation/*.a
+Experiment files/Carla Simulation/*.egg-info
+Experiment files/Carla Simulation/*.kdev4
+Experiment files/Carla Simulation/*.log
+Experiment files/Carla Simulation/*.o
+Experiment files/Carla Simulation/*.pb.cc
+Experiment files/Carla Simulation/*.pb.h
+Experiment files/Carla Simulation/*.pid
+Experiment files/Carla Simulation/*.pri
+Experiment files/Carla Simulation/*.pro
+Experiment files/Carla Simulation/*.py[cod]
+Experiment files/Carla Simulation/*.sln
+Experiment files/Carla Simulation/*.so
+Experiment files/Carla Simulation/*.stackdump
+Experiment files/Carla Simulation/*.sublime-workspace
+Experiment files/Carla Simulation/*.workspace
+Experiment files/Carla Simulation/*CodeCompletionFolders.txt
+Experiment files/Carla Simulation/*CodeLitePreProcessor.txt
+Experiment files/Carla Simulation/.aria2c.input
+Experiment files/Carla Simulation/.codelite
+Experiment files/Carla Simulation/.gdb_history
+Experiment files/Carla Simulation/.gtest
+Experiment files/Carla Simulation/.idea
+Experiment files/Carla Simulation/.tags*
+Experiment files/Carla Simulation/.vs
+Experiment files/Carla Simulation/.vscode
+Experiment files/Carla Simulation/__pycache__
+Experiment files/Carla Simulation/_benchmarks_results
+Experiment files/Carla Simulation/_images*
+Experiment files/Carla Simulation/_out*
+Experiment files/Carla Simulation/_site
+Experiment files/Carla Simulation/core
+Experiment files/Carla Simulation/profiler.csv
 
-HD Map Optimization/*.pth
-HD Map Optimization/assets/train_images
-HD Map Optimization/assets/temp
-HD Map Optimization/YOLOX_outputs/*
+Experiment files/HD Map Optimization/*.pth
+Experiment files/HD Map Optimization/assets/train_images
+Experiment files/HD Map Optimization/assets/temp
+Experiment files/HD Map Optimization/YOLOX_outputs/*
