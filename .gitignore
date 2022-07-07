@@ -1,49 +1,54 @@
-Build
-Dist
-Doxygen
-Deprecated/PythonClient/dist
-TrafficManager/build
-Util/Build
-Install
-Plugins
-!Unreal/CarlaUE4/Plugins
+Carla Simulation/Build
+Carla Simulation/Dist
+Carla Simulation/Doxygen
+Carla Simulation/Deprecated/PythonClient/dist
+Carla Simulation/TrafficManager/build
+Carla Simulation/Util/Build
+Carla Simulation/Install
+Carla Simulation/Plugins
+Carla Simulation/!Unreal/CarlaUE4/Plugins
 
-/ExportedMaps
-/Import/*
-!/Import/README.md
+Carla Simulation//ExportedMaps
+Carla Simulation//Import/*
+Carla Simulation/!/Import/README.md
 
-*.VC.db
-*.VC.opendb
-*.a
-*.egg-info
-*.kdev4
-*.log
-*.o
-*.pb.cc
-*.pb.h
-*.pid
-*.pri
-*.pro
-*.py[cod]
-*.sln
-*.so
-*.stackdump
-*.sublime-workspace
-*.workspace
-*CodeCompletionFolders.txt
-*CodeLitePreProcessor.txt
-.aria2c.input
-.codelite
-.gdb_history
-.gtest
-.idea
-.tags*
-.vs
-.vscode
-__pycache__
-_benchmarks_results
-_images*
-_out*
-_site
-core
-profiler.csv
+Carla Simulation/*.VC.db
+Carla Simulation/*.VC.opendb
+Carla Simulation/*.a
+Carla Simulation/*.egg-info
+Carla Simulation/*.kdev4
+Carla Simulation/*.log
+Carla Simulation/*.o
+Carla Simulation/*.pb.cc
+Carla Simulation/*.pb.h
+Carla Simulation/*.pid
+Carla Simulation/*.pri
+Carla Simulation/*.pro
+Carla Simulation/*.py[cod]
+Carla Simulation/*.sln
+Carla Simulation/*.so
+Carla Simulation/*.stackdump
+Carla Simulation/*.sublime-workspace
+Carla Simulation/*.workspace
+Carla Simulation/*CodeCompletionFolders.txt
+Carla Simulation/*CodeLitePreProcessor.txt
+Carla Simulation/.aria2c.input
+Carla Simulation/.codelite
+Carla Simulation/.gdb_history
+Carla Simulation/.gtest
+Carla Simulation/.idea
+Carla Simulation/.tags*
+Carla Simulation/.vs
+Carla Simulation/.vscode
+Carla Simulation/__pycache__
+Carla Simulation/_benchmarks_results
+Carla Simulation/_images*
+Carla Simulation/_out*
+Carla Simulation/_site
+Carla Simulation/core
+Carla Simulation/profiler.csv
+
+HD Map Optimization/*.pth
+HD Map Optimization/assets/train_images
+HD Map Optimization/assets/temp
+HD Map Optimization/YOLOX_outputs/*
