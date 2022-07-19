@@ -1,0 +1,30 @@
+[1.077s] Invoking command in '/home/doe/dev_ws/src/py_srvcli': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/doe/dev_ws/install/py_srvcli/lib/python3.8/site-packages:${PYTHONPATH} /home/doe/anaconda3/bin/python setup.py egg_info --egg-base ../../build/py_srvcli build --build-base /home/doe/dev_ws/build/py_srvcli/build install --prefix /home/doe/dev_ws/install/py_srvcli --record /home/doe/dev_ws/build/py_srvcli/install.log --single-version-externally-managed
+[1.264s] /home/doe/anaconda3/lib/python3.8/site-packages/setuptools/dist.py:738: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[1.264s]   warnings.warn(
+[1.264s] /home/doe/anaconda3/lib/python3.8/site-packages/setuptools/dist.py:738: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[1.264s]   warnings.warn(
+[1.498s] running egg_info
+[1.526s] writing ../../build/py_srvcli/py_srvcli.egg-info/PKG-INFO
+[1.542s] writing dependency_links to ../../build/py_srvcli/py_srvcli.egg-info/dependency_links.txt
+[1.589s] writing entry points to ../../build/py_srvcli/py_srvcli.egg-info/entry_points.txt
+[1.621s] writing requirements to ../../build/py_srvcli/py_srvcli.egg-info/requires.txt
+[1.636s] writing top-level names to ../../build/py_srvcli/py_srvcli.egg-info/top_level.txt
+[1.676s] reading manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'
+[1.676s] writing manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'
+[1.676s] running build
+[1.676s] running build_py
+[1.677s] copying py_srvcli/service_member_function.py -> /home/doe/dev_ws/build/py_srvcli/build/lib/py_srvcli
+[1.677s] running install
+[1.677s] /home/doe/anaconda3/lib/python3.8/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.677s]   warnings.warn(
+[1.680s] running install_lib
+[1.707s] copying /home/doe/dev_ws/build/py_srvcli/build/lib/py_srvcli/service_member_function.py -> /home/doe/dev_ws/install/py_srvcli/lib/python3.8/site-packages/py_srvcli
+[1.707s] byte-compiling /home/doe/dev_ws/install/py_srvcli/lib/python3.8/site-packages/py_srvcli/service_member_function.py to service_member_function.cpython-38.pyc
+[1.707s] running install_data
+[1.719s] running install_egg_info
+[1.752s] removing '/home/doe/dev_ws/install/py_srvcli/lib/python3.8/site-packages/py_srvcli-0.0.0-py3.8.egg-info' (and everything under it)
+[1.752s] Copying ../../build/py_srvcli/py_srvcli.egg-info to /home/doe/dev_ws/install/py_srvcli/lib/python3.8/site-packages/py_srvcli-0.0.0-py3.8.egg-info
+[1.752s] running install_scripts
+[1.827s] Installing service script to /home/doe/dev_ws/install/py_srvcli/lib/py_srvcli
+[1.827s] writing list of installed files to '/home/doe/dev_ws/build/py_srvcli/install.log'
+[1.854s] Invoked command in '/home/doe/dev_ws/src/py_srvcli' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/doe/dev_ws/install/py_srvcli/lib/python3.8/site-packages:${PYTHONPATH} /home/doe/anaconda3/bin/python setup.py egg_info --egg-base ../../build/py_srvcli build --build-base /home/doe/dev_ws/build/py_srvcli/build install --prefix /home/doe/dev_ws/install/py_srvcli --record /home/doe/dev_ws/build/py_srvcli/install.log --single-version-externally-managed

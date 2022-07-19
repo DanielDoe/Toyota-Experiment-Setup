@@ -1,0 +1,7 @@
+{
+  "package_name": "tutorial_interfaces",
+  "non_idl_tuples": [
+    "/home/doe/dev_ws/src/tutorial_interfaces:msg/Num.msg",
+    "/home/doe/dev_ws/src/tutorial_interfaces:srv/AddThreeInts.srv"
+  ]
+}

@@ -1,0 +1,71 @@
+[0.000000] (-) TimerEvent: {}
+[0.000085] (-) JobUnselected: {'identifier': 'cpp_srvcli'}
+[0.000104] (py_srvcli) JobQueued: {'identifier': 'py_srvcli', 'dependencies': OrderedDict()}
+[0.000118] (py_srvcli) JobStarted: {'identifier': 'py_srvcli'}
+[0.099707] (-) TimerEvent: {}
+[0.199959] (-) TimerEvent: {}
+[0.300196] (-) TimerEvent: {}
+[0.405410] (-) TimerEvent: {}
+[0.505663] (-) TimerEvent: {}
+[0.605970] (-) TimerEvent: {}
+[0.706239] (-) TimerEvent: {}
+[0.806477] (-) TimerEvent: {}
+[0.906712] (-) TimerEvent: {}
+[1.006960] (-) TimerEvent: {}
+[1.107199] (-) TimerEvent: {}
+[1.207405] (-) TimerEvent: {}
+[1.209263] (py_srvcli) Command: {'cmd': ['/home/doe/anaconda3/bin/python', 'setup.py', 'egg_info', '--egg-base', '../../build/py_srvcli', 'build', '--build-base', '/home/doe/dev_ws/build/py_srvcli/build', 'install', '--prefix', '/home/doe/dev_ws/install/py_srvcli', '--record', '/home/doe/dev_ws/build/py_srvcli/install.log', '--single-version-externally-managed'], 'cwd': '/home/doe/dev_ws/src/py_srvcli', 'env': {'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'VIRTUALENVWRAPPER_WORKON_CD': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'CONDA_PROMPT_MODIFIER': '(base)', 'WORKON_HOME': '/home/doe/.virtualenvs', 'USER': 'doe', 'SSH_AGENT_PID': '4642', 'XDG_SESSION_TYPE': 'x11', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/rti.com/rti_connext_dds-5.3.1/lib/x64Linux3gcc5.4.0:/opt/ros/foxy/lib', 'HOME': '/home/doe', 'VIRTUALENVWRAPPER_PYTHON': '/usr/bin/python3', 'CHROME_DESKTOP': 'code-url-handler.desktop', 'CONDA_SHLVL': '1', 'TERM_PROGRAM_VERSION': '1.66.2', 'DESKTOP_SESSION': 'ubuntu', 'NVM_BIN': '/home/doe/.nvm/versions/node/v16.13.0/bin', 'NVM_INC': '/home/doe/.nvm/versions/node/v16.13.0/include/node', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'NDDSHOME': '/opt/rti.com/rti_connext_dds-5.3.1', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'MANAGERPID': '4443', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '62602', 'CARLA_ROOT': '/opt/carla-simulator/', 'NVM_DIR': '/home/doe/.nvm', 'IM_CONFIG_PHASE': '1', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'doe', 'JOURNAL_STREAM': '9:81172', '_': '/home/doe/anaconda3/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'doe', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'ROS_LOCALHOST_ONLY': '0', 'CUDADIR': '/usr/local/cuda-11.4', 'WINDOWPATH': '2', 'PATH': '/Users/doe/go/bin:/home/doe/.nvm/versions/node/v16.13.0/bin:/home/doe/.local/bin:/opt/rti.com/rti_connext_dds-5.3.1/lib/x64Linux3gcc5.4.0:/opt/rti.com/rti_connext_dds-5.3.1/bin:/opt/ros/foxy/bin:/bin:/home/doe/.nvm/versions/node/v16.13.0/bin:/home/doe/anaconda3/bin:/home/doe/anaconda3/condabin:/usr/local/cuda-11.4/bin:/home/doe/.local/bin:/usr/local/cuda-11.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/doe-System:@/tmp/.ICE-unix/4677,unix/doe-System:/tmp/.ICE-unix/4677', 'INVOCATION_ID': '82559a292a79404dabcc49156e8d8f11', 'XDG_MENU_PREFIX': 'gnome-', 'XDG_RUNTIME_DIR': '/run/user/1000', 'GDK_BACKEND': 'x11', 'DISPLAY': ':1', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-feb417aacb.sock', 'TERM_PROGRAM': 'vscode', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/foxy', 'CONDA_PYTHON_EXE': '/home/doe/anaconda3/bin/python', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'SHELL': '/bin/bash', 'GOPATH': '/Users/doe/go', 'QT_ACCESSIBILITY': '1', 'NO_AT_BRIDGE': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VIRTUALENVWRAPPER_PROJECT_FILENAME': '.project', 'CONDA_DEFAULT_ENV': 'base', 'VIRTUALENVWRAPPER_HOOK_DIR': '/home/doe/.virtualenvs', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'GJS_DEBUG_OUTPUT': 'stderr', 'VIRTUALENVWRAPPER_SCRIPT': '/usr/local/bin/virtualenvwrapper.sh', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '--ms-enable-electron-run-as-node', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/doe/dev_ws/build/py_srvcli', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/doe/anaconda3/bin/conda', 'NVM_CD_FLAGS': '', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/doe/dev_ws/install/py_srvcli/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/opt/carla-simulator//PythonAPI/carla/dist/carla-0.9.13-py3.7-linux-x86_64.egg:/opt/carla-simulator//PythonAPI/carla:/opt/carla-simulator//PythonAPI/carla/dist/carla-0.9.13-py3.7-linux-x86_64.egg:/opt/carla-simulator//PythonAPI/carla', 'CONDA_PREFIX': '/home/doe/anaconda3', 'COLCON': '1'}, 'shell': False}
+[1.307534] (-) TimerEvent: {}
+[1.398249] (py_srvcli) StderrLine: {'line': b"/home/doe/anaconda3/lib/python3.8/site-packages/setuptools/dist.py:738: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead\n"}
+[1.398421] (py_srvcli) StderrLine: {'line': b'  warnings.warn(\n'}
+[1.398489] (py_srvcli) StderrLine: {'line': b"/home/doe/anaconda3/lib/python3.8/site-packages/setuptools/dist.py:738: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead\n"}
+[1.398537] (py_srvcli) StderrLine: {'line': b'  warnings.warn(\n'}
+[1.407587] (-) TimerEvent: {}
+[1.507778] (-) TimerEvent: {}
+[1.608003] (-) TimerEvent: {}
+[1.632885] (py_srvcli) StdoutLine: {'line': b'running egg_info\n'}
+[1.633224] (py_srvcli) StdoutLine: {'line': b'creating ../../build/py_srvcli/py_srvcli.egg-info\n'}
+[1.664096] (py_srvcli) StdoutLine: {'line': b'writing ../../build/py_srvcli/py_srvcli.egg-info/PKG-INFO\n'}
+[1.679533] (py_srvcli) StdoutLine: {'line': b'writing dependency_links to ../../build/py_srvcli/py_srvcli.egg-info/dependency_links.txt\n'}
+[1.708094] (-) TimerEvent: {}
+[1.726282] (py_srvcli) StdoutLine: {'line': b'writing entry points to ../../build/py_srvcli/py_srvcli.egg-info/entry_points.txt\n'}
+[1.757503] (py_srvcli) StdoutLine: {'line': b'writing requirements to ../../build/py_srvcli/py_srvcli.egg-info/requires.txt\n'}
+[1.773090] (py_srvcli) StdoutLine: {'line': b'writing top-level names to ../../build/py_srvcli/py_srvcli.egg-info/top_level.txt\n'}
+[1.773244] (py_srvcli) StdoutLine: {'line': b"writing manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'\n"}
+[1.808198] (-) TimerEvent: {}
+[1.812278] (py_srvcli) StdoutLine: {'line': b"reading manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'\n"}
+[1.812738] (py_srvcli) StdoutLine: {'line': b"writing manifest file '../../build/py_srvcli/py_srvcli.egg-info/SOURCES.txt'\n"}
+[1.812954] (py_srvcli) StdoutLine: {'line': b'running build\n'}
+[1.813031] (py_srvcli) StdoutLine: {'line': b'running build_py\n'}
+[1.813114] (py_srvcli) StdoutLine: {'line': b'creating /home/doe/dev_ws/build/py_srvcli/build\n'}
+[1.813205] (py_srvcli) StdoutLine: {'line': b'creating /home/doe/dev_ws/build/py_srvcli/build/lib\n'}
+[1.813294] (py_srvcli) StdoutLine: {'line': b'creating /home/doe/dev_ws/build/py_srvcli/build/lib/py_srvcli\n'}
+[1.813370] (py_srvcli) StdoutLine: {'line': b'copying py_srvcli/__init__.py -> /home/doe/dev_ws/build/py_srvcli/build/lib/py_srvcli\n'}
+[1.813434] (py_srvcli) StdoutLine: {'line': b'copying py_srvcli/client_member_function.py -> /home/doe/dev_ws/build/py_srvcli/build/lib/py_srvcli\n'}
+[1.813500] (py_srvcli) StdoutLine: {'line': b'copying py_srvcli/server_member_function.py -> /home/doe/dev_ws/build/py_srvcli/build/lib/py_srvcli\n'}
+[1.813566] (py_srvcli) StdoutLine: {'line': b'running install\n'}
+[1.813864] (py_srvcli) StderrLine: {'line': b'/home/doe/anaconda3/lib/python3.8/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.\n'}
+[1.813923] (py_srvcli) StderrLine: {'line': b'  warnings.warn(\n'}
+[1.817571] (py_srvcli) StdoutLine: {'line': b'running install_lib\n'}
+[1.844967] (py_srvcli) StdoutLine: {'line': b'creating /home/doe/dev_ws/install/py_srvcli/lib/python3.8/site-packages/py_srvcli\n'}
+[1.845153] (py_srvcli) StdoutLine: {'line': b'copying /home/doe/dev_ws/build/py_srvcli/build/lib/py_srvcli/__init__.py -> /home/doe/dev_ws/install/py_srvcli/lib/python3.8/site-packages/py_srvcli\n'}
+[1.845211] (py_srvcli) StdoutLine: {'line': b'copying /home/doe/dev_ws/build/py_srvcli/build/lib/py_srvcli/client_member_function.py -> /home/doe/dev_ws/install/py_srvcli/lib/python3.8/site-packages/py_srvcli\n'}
+[1.845253] (py_srvcli) StdoutLine: {'line': b'copying /home/doe/dev_ws/build/py_srvcli/build/lib/py_srvcli/server_member_function.py -> /home/doe/dev_ws/install/py_srvcli/lib/python3.8/site-packages/py_srvcli\n'}
+[1.845437] (py_srvcli) StdoutLine: {'line': b'byte-compiling /home/doe/dev_ws/install/py_srvcli/lib/python3.8/site-packages/py_srvcli/__init__.py to __init__.cpython-38.pyc\n'}
+[1.845504] (py_srvcli) StdoutLine: {'line': b'byte-compiling /home/doe/dev_ws/install/py_srvcli/lib/python3.8/site-packages/py_srvcli/client_member_function.py to client_member_function.cpython-38.pyc\n'}
+[1.845756] (py_srvcli) StdoutLine: {'line': b'byte-compiling /home/doe/dev_ws/install/py_srvcli/lib/python3.8/site-packages/py_srvcli/server_member_function.py to server_member_function.cpython-38.pyc\n'}
+[1.845978] (py_srvcli) StdoutLine: {'line': b'running install_data\n'}
+[1.858118] (py_srvcli) StdoutLine: {'line': b'creating /home/doe/dev_ws/install/py_srvcli/share/ament_index\n'}
+[1.858234] (py_srvcli) StdoutLine: {'line': b'creating /home/doe/dev_ws/install/py_srvcli/share/ament_index/resource_index\n'}
+[1.858289] (py_srvcli) StdoutLine: {'line': b'creating /home/doe/dev_ws/install/py_srvcli/share/ament_index/resource_index/packages\n'}
+[1.858413] (py_srvcli) StdoutLine: {'line': b'copying resource/py_srvcli -> /home/doe/dev_ws/install/py_srvcli/share/ament_index/resource_index/packages\n'}
+[1.858485] (py_srvcli) StdoutLine: {'line': b'copying package.xml -> /home/doe/dev_ws/install/py_srvcli/share/py_srvcli\n'}
+[1.858539] (py_srvcli) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.890628] (py_srvcli) StdoutLine: {'line': b'Copying ../../build/py_srvcli/py_srvcli.egg-info to /home/doe/dev_ws/install/py_srvcli/lib/python3.8/site-packages/py_srvcli-0.0.0-py3.8.egg-info\n'}
+[1.891005] (py_srvcli) StdoutLine: {'line': b'running install_scripts\n'}
+[1.908305] (-) TimerEvent: {}
+[1.964643] (py_srvcli) StdoutLine: {'line': b'Installing service script to /home/doe/dev_ws/install/py_srvcli/lib/py_srvcli\n'}
+[1.964851] (py_srvcli) StdoutLine: {'line': b"writing list of installed files to '/home/doe/dev_ws/build/py_srvcli/install.log'\n"}
+[1.983763] (py_srvcli) CommandEnded: {'returncode': 0}
+[2.005271] (py_srvcli) JobEnded: {'identifier': 'py_srvcli', 'rc': 0}
+[2.005606] (-) EventReactorShutdown: {}

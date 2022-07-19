@@ -1,0 +1,51 @@
+// generated from rosidl_generator_dds_idl/resource/idl.idl.em
+// with input from tutorial_interfaces:srv/AddThreeInts.idl
+// generated code does not contain a copyright notice
+
+#ifndef __tutorial_interfaces__srv__add_three_ints__idl__
+#define __tutorial_interfaces__srv__add_three_ints__idl__
+
+
+module tutorial_interfaces {
+
+module srv {
+
+module dds_ {
+
+
+struct AddThreeInts_Request_ {
+long long a_;
+long long b_;
+long long c_;
+
+};
+
+
+};  // module dds_
+
+};  // module srv
+
+};  // module tutorial_interfaces
+
+
+module tutorial_interfaces {
+
+module srv {
+
+module dds_ {
+
+
+struct AddThreeInts_Response_ {
+long long sum_;
+
+};
+
+
+};  // module dds_
+
+};  // module srv
+
+};  // module tutorial_interfaces
+
+
+#endif  // __tutorial_interfaces__srv__add_three_ints__idl__

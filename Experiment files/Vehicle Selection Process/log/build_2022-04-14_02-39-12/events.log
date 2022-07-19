@@ -1,0 +1,193 @@
+[0.000000] (-) TimerEvent: {}
+[0.000911] (-) JobUnselected: {'identifier': 'cpp_srvcli'}
+[0.000939] (-) JobUnselected: {'identifier': 'py_srvcli'}
+[0.001741] (tutorial_interfaces) JobQueued: {'identifier': 'tutorial_interfaces', 'dependencies': OrderedDict()}
+[0.001771] (tutorial_interfaces) JobStarted: {'identifier': 'tutorial_interfaces'}
+[0.019882] (tutorial_interfaces) JobProgress: {'identifier': 'tutorial_interfaces', 'progress': 'cmake'}
+[0.020124] (tutorial_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/home/doe/dev_ws/src/tutorial_interfaces', '-DCMAKE_INSTALL_PREFIX=/home/doe/dev_ws/install/tutorial_interfaces'], 'cwd': '/home/doe/dev_ws/build/tutorial_interfaces', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('VIRTUALENVWRAPPER_WORKON_CD', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('WORKON_HOME', '/home/doe/.virtualenvs'), ('USER', 'doe'), ('SSH_AGENT_PID', '4642'), ('XDG_SESSION_TYPE', 'x11'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/rti.com/rti_connext_dds-5.3.1/lib/x64Linux3gcc5.4.0:/opt/ros/foxy/lib'), ('HOME', '/home/doe'), ('VIRTUALENVWRAPPER_PYTHON', '/usr/bin/python3'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/doe/dev_ws/src/tutorial_interfaces'), ('TERM_PROGRAM_VERSION', '1.66.2'), ('DESKTOP_SESSION', 'ubuntu'), ('NVM_BIN', '/home/doe/.nvm/versions/node/v16.13.0/bin'), ('NVM_INC', '/home/doe/.nvm/versions/node/v16.13.0/include/node'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('NDDSHOME', '/opt/rti.com/rti_connext_dds-5.3.1'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '4443'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '62602'), ('CARLA_ROOT', '/opt/carla-simulator/'), ('NVM_DIR', '/home/doe/.nvm'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/doe/dev_ws/install'), ('ROS_DISTRO', 'foxy'), ('LOGNAME', 'doe'), ('JOURNAL_STREAM', '9:81172'), ('_', '/home/doe/anaconda3/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'doe'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('CUDADIR', '/usr/local/cuda-11.4'), ('WINDOWPATH', '2'), ('PATH', '/Users/doe/go/bin:/home/doe/.nvm/versions/node/v16.13.0/bin:/home/doe/.local/bin:/opt/rti.com/rti_connext_dds-5.3.1/lib/x64Linux3gcc5.4.0:/opt/rti.com/rti_connext_dds-5.3.1/bin:/opt/ros/foxy/bin:/bin:/home/doe/.nvm/versions/node/v16.13.0/bin:/home/doe/anaconda3/bin:/home/doe/anaconda3/condabin:/usr/local/cuda-11.4/bin:/home/doe/.local/bin:/usr/local/cuda-11.4/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/doe-System:@/tmp/.ICE-unix/4677,unix/doe-System:/tmp/.ICE-unix/4677'), ('INVOCATION_ID', '82559a292a79404dabcc49156e8d8f11'), ('XDG_MENU_PREFIX', 'gnome-'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-feb417aacb.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/doe/dev_ws/install/py_srvcli:/opt/ros/foxy'), ('CONDA_PYTHON_EXE', '/home/doe/anaconda3/bin/python'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('GOPATH', '/Users/doe/go'), ('QT_ACCESSIBILITY', '1'), ('NO_AT_BRIDGE', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VIRTUALENVWRAPPER_PROJECT_FILENAME', '.project'), ('CONDA_DEFAULT_ENV', 'base'), ('VIRTUALENVWRAPPER_HOOK_DIR', '/home/doe/.virtualenvs'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('VIRTUALENVWRAPPER_SCRIPT', '/usr/local/bin/virtualenvwrapper.sh'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', '--ms-enable-electron-run-as-node'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/doe/dev_ws/build/tutorial_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/doe/anaconda3/bin/conda'), ('NVM_CD_FLAGS', ''), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/doe/dev_ws/install/py_srvcli/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages:/opt/carla-simulator//PythonAPI/carla/dist/carla-0.9.13-py3.7-linux-x86_64.egg:/opt/carla-simulator//PythonAPI/carla:/opt/carla-simulator//PythonAPI/carla/dist/carla-0.9.13-py3.7-linux-x86_64.egg:/opt/carla-simulator//PythonAPI/carla'), ('CONDA_PREFIX', '/home/doe/anaconda3'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/doe/dev_ws/install/py_srvcli:/opt/ros/foxy')]), 'shell': False}
+[0.099764] (-) TimerEvent: {}
+[0.136690] (tutorial_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.199957] (-) TimerEvent: {}
+[0.261473] (tutorial_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.267786] (tutorial_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.300091] (-) TimerEvent: {}
+[0.304434] (tutorial_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.309360] (tutorial_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.309675] (tutorial_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.310222] (tutorial_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.312514] (tutorial_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.359993] (tutorial_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.364922] (tutorial_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.365116] (tutorial_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.365384] (tutorial_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.367012] (tutorial_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 0.9.9 (/opt/ros/foxy/share/ament_cmake/cmake)\n'}
+[0.387228] (tutorial_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /home/doe/anaconda3/bin/python3 (found suitable version "3.8.8", minimum required is "3") \n'}
+[0.387399] (tutorial_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /home/doe/anaconda3/bin/python3\n'}
+[0.400159] (-) TimerEvent: {}
+[0.500406] (-) TimerEvent: {}
+[0.565353] (tutorial_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.9.6 (/opt/ros/foxy/share/ament_lint_auto/cmake)\n'}
+[0.600524] (-) TimerEvent: {}
+[0.620725] (tutorial_interfaces) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[0.622240] (tutorial_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.623166] (tutorial_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.624649] (tutorial_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.0.1 (/opt/ros/foxy/share/rosidl_default_generators/cmake)\n'}
+[0.626900] (tutorial_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_connext_c;rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.631948] (tutorial_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 1.2.1 (/opt/ros/foxy/share/rosidl_adapter/cmake)\n'}
+[0.650027] (tutorial_interfaces) StdoutLine: {'line': b'-- Found RTI Connext: /opt/rti.com/rti_connext_dds-5.3.1\n'}
+[0.652029] (tutorial_interfaces) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/foxy/share/connext_cmake_module/cmake/Modules/FindConnext.cmake:163 (list):\n'}
+[0.652137] (tutorial_interfaces) StderrLine: {'line': b'  Policy CMP0121 is not set: The list() command now validates parsing of\n'}
+[0.652193] (tutorial_interfaces) StderrLine: {'line': b'  index arguments.  Run "cmake --help-policy CMP0121" for policy details.\n'}
+[0.652244] (tutorial_interfaces) StderrLine: {'line': b'  Use the cmake_policy command to set the policy and suppress this warning.\n'}
+[0.652293] (tutorial_interfaces) StderrLine: {'line': b'  Invalid list index "libnddsc.so".\n'}
+[0.652412] (tutorial_interfaces) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.652475] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/connext_cmake_module/cmake/Modules/FindConnext.cmake:198 (_count_found_libraries)\n'}
+[0.652524] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_typesupport_connext_c/cmake/rosidl_typesupport_connext_c-extras.cmake:5 (find_package)\n'}
+[0.652573] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_typesupport_connext_c/cmake/rosidl_typesupport_connext_cConfig.cmake:41 (include)\n'}
+[0.652626] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_typesupport_c/cmake/rosidl_typesupport_c-extras.cmake:13 (find_package)\n'}
+[0.652684] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_typesupport_c/cmake/rosidl_typesupport_cConfig.cmake:41 (include)\n'}
+[0.652734] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_default_generators/cmake/rosidl_default_generators-extras.cmake:21 (find_package)\n'}
+[0.652780] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_default_generators/cmake/rosidl_default_generatorsConfig.cmake:41 (include)\n'}
+[0.652828] (tutorial_interfaces) StderrLine: {'line': b'  CMakeLists.txt:38 (find_package)\n'}
+[0.652876] (tutorial_interfaces) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.652922] (tutorial_interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[0.652970] (tutorial_interfaces) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/foxy/share/connext_cmake_module/cmake/Modules/FindConnext.cmake:163 (list):\n'}
+[0.653017] (tutorial_interfaces) StderrLine: {'line': b'  Policy CMP0121 is not set: The list() command now validates parsing of\n'}
+[0.653068] (tutorial_interfaces) StderrLine: {'line': b'  index arguments.  Run "cmake --help-policy CMP0121" for policy details.\n'}
+[0.653115] (tutorial_interfaces) StderrLine: {'line': b'  Use the cmake_policy command to set the policy and suppress this warning.\n'}
+[0.653164] (tutorial_interfaces) StderrLine: {'line': b'  Invalid list index "libnddscore.so".\n'}
+[0.653211] (tutorial_interfaces) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.653257] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/connext_cmake_module/cmake/Modules/FindConnext.cmake:198 (_count_found_libraries)\n'}
+[0.653311] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_typesupport_connext_c/cmake/rosidl_typesupport_connext_c-extras.cmake:5 (find_package)\n'}
+[0.653354] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_typesupport_connext_c/cmake/rosidl_typesupport_connext_cConfig.cmake:41 (include)\n'}
+[0.653397] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_typesupport_c/cmake/rosidl_typesupport_c-extras.cmake:13 (find_package)\n'}
+[0.653442] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_typesupport_c/cmake/rosidl_typesupport_cConfig.cmake:41 (include)\n'}
+[0.653486] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_default_generators/cmake/rosidl_default_generators-extras.cmake:21 (find_package)\n'}
+[0.653529] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_default_generators/cmake/rosidl_default_generatorsConfig.cmake:41 (include)\n'}
+[0.653571] (tutorial_interfaces) StderrLine: {'line': b'  CMakeLists.txt:38 (find_package)\n'}
+[0.653614] (tutorial_interfaces) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.653656] (tutorial_interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[0.653698] (tutorial_interfaces) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/foxy/share/connext_cmake_module/cmake/Modules/FindConnext.cmake:163 (list):\n'}
+[0.653741] (tutorial_interfaces) StderrLine: {'line': b'  Policy CMP0121 is not set: The list() command now validates parsing of\n'}
+[0.653786] (tutorial_interfaces) StderrLine: {'line': b'  index arguments.  Run "cmake --help-policy CMP0121" for policy details.\n'}
+[0.653833] (tutorial_interfaces) StderrLine: {'line': b'  Use the cmake_policy command to set the policy and suppress this warning.\n'}
+[0.653877] (tutorial_interfaces) StderrLine: {'line': b'  Invalid list index "libnddscpp.so".\n'}
+[0.653919] (tutorial_interfaces) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.653960] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/connext_cmake_module/cmake/Modules/FindConnext.cmake:198 (_count_found_libraries)\n'}
+[0.654003] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_typesupport_connext_c/cmake/rosidl_typesupport_connext_c-extras.cmake:5 (find_package)\n'}
+[0.654045] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_typesupport_connext_c/cmake/rosidl_typesupport_connext_cConfig.cmake:41 (include)\n'}
+[0.654088] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_typesupport_c/cmake/rosidl_typesupport_c-extras.cmake:13 (find_package)\n'}
+[0.654129] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_typesupport_c/cmake/rosidl_typesupport_cConfig.cmake:41 (include)\n'}
+[0.654173] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_default_generators/cmake/rosidl_default_generators-extras.cmake:21 (find_package)\n'}
+[0.654217] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_default_generators/cmake/rosidl_default_generatorsConfig.cmake:41 (include)\n'}
+[0.654259] (tutorial_interfaces) StderrLine: {'line': b'  CMakeLists.txt:38 (find_package)\n'}
+[0.654302] (tutorial_interfaces) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.654348] (tutorial_interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[0.654390] (tutorial_interfaces) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/foxy/share/connext_cmake_module/cmake/Modules/FindConnext.cmake:163 (list):\n'}
+[0.654432] (tutorial_interfaces) StderrLine: {'line': b'  Policy CMP0121 is not set: The list() command now validates parsing of\n'}
+[0.654476] (tutorial_interfaces) StderrLine: {'line': b'  index arguments.  Run "cmake --help-policy CMP0121" for policy details.\n'}
+[0.654518] (tutorial_interfaces) StderrLine: {'line': b'  Use the cmake_policy command to set the policy and suppress this warning.\n'}
+[0.654565] (tutorial_interfaces) StderrLine: {'line': b'  Invalid list index "librticonnextmsgcpp.so".\n'}
+[0.654608] (tutorial_interfaces) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.654651] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/connext_cmake_module/cmake/Modules/FindConnext.cmake:198 (_count_found_libraries)\n'}
+[0.654693] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_typesupport_connext_c/cmake/rosidl_typesupport_connext_c-extras.cmake:5 (find_package)\n'}
+[0.654736] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_typesupport_connext_c/cmake/rosidl_typesupport_connext_cConfig.cmake:41 (include)\n'}
+[0.654779] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_typesupport_c/cmake/rosidl_typesupport_c-extras.cmake:13 (find_package)\n'}
+[0.654821] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_typesupport_c/cmake/rosidl_typesupport_cConfig.cmake:41 (include)\n'}
+[0.654864] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_default_generators/cmake/rosidl_default_generators-extras.cmake:21 (find_package)\n'}
+[0.654907] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_default_generators/cmake/rosidl_default_generatorsConfig.cmake:41 (include)\n'}
+[0.654949] (tutorial_interfaces) StderrLine: {'line': b'  CMakeLists.txt:38 (find_package)\n'}
+[0.654990] (tutorial_interfaces) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.655034] (tutorial_interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[0.655083] (tutorial_interfaces) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/foxy/share/connext_cmake_module/cmake/Modules/FindConnext.cmake:163 (list):\n'}
+[0.655128] (tutorial_interfaces) StderrLine: {'line': b'  Policy CMP0121 is not set: The list() command now validates parsing of\n'}
+[0.655174] (tutorial_interfaces) StderrLine: {'line': b'  index arguments.  Run "cmake --help-policy CMP0121" for policy details.\n'}
+[0.655220] (tutorial_interfaces) StderrLine: {'line': b'  Use the cmake_policy command to set the policy and suppress this warning.\n'}
+[0.655266] (tutorial_interfaces) StderrLine: {'line': b'  Invalid list index "libnddscd.so".\n'}
+[0.655310] (tutorial_interfaces) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.655353] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/connext_cmake_module/cmake/Modules/FindConnext.cmake:199 (_count_found_libraries)\n'}
+[0.655398] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_typesupport_connext_c/cmake/rosidl_typesupport_connext_c-extras.cmake:5 (find_package)\n'}
+[0.655452] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_typesupport_connext_c/cmake/rosidl_typesupport_connext_cConfig.cmake:41 (include)\n'}
+[0.655496] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_typesupport_c/cmake/rosidl_typesupport_c-extras.cmake:13 (find_package)\n'}
+[0.655539] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_typesupport_c/cmake/rosidl_typesupport_cConfig.cmake:41 (include)\n'}
+[0.655581] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_default_generators/cmake/rosidl_default_generators-extras.cmake:21 (find_package)\n'}
+[0.655629] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_default_generators/cmake/rosidl_default_generatorsConfig.cmake:41 (include)\n'}
+[0.655672] (tutorial_interfaces) StderrLine: {'line': b'  CMakeLists.txt:38 (find_package)\n'}
+[0.655715] (tutorial_interfaces) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.655758] (tutorial_interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[0.655800] (tutorial_interfaces) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/foxy/share/connext_cmake_module/cmake/Modules/FindConnext.cmake:163 (list):\n'}
+[0.655844] (tutorial_interfaces) StderrLine: {'line': b'  Policy CMP0121 is not set: The list() command now validates parsing of\n'}
+[0.655886] (tutorial_interfaces) StderrLine: {'line': b'  index arguments.  Run "cmake --help-policy CMP0121" for policy details.\n'}
+[0.655928] (tutorial_interfaces) StderrLine: {'line': b'  Use the cmake_policy command to set the policy and suppress this warning.\n'}
+[0.655971] (tutorial_interfaces) StderrLine: {'line': b'  Invalid list index "libnddscored.so".\n'}
+[0.656013] (tutorial_interfaces) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.656056] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/connext_cmake_module/cmake/Modules/FindConnext.cmake:199 (_count_found_libraries)\n'}
+[0.656104] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_typesupport_connext_c/cmake/rosidl_typesupport_connext_c-extras.cmake:5 (find_package)\n'}
+[0.656148] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_typesupport_connext_c/cmake/rosidl_typesupport_connext_cConfig.cmake:41 (include)\n'}
+[0.656191] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_typesupport_c/cmake/rosidl_typesupport_c-extras.cmake:13 (find_package)\n'}
+[0.656234] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_typesupport_c/cmake/rosidl_typesupport_cConfig.cmake:41 (include)\n'}
+[0.656277] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_default_generators/cmake/rosidl_default_generators-extras.cmake:21 (find_package)\n'}
+[0.656319] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_default_generators/cmake/rosidl_default_generatorsConfig.cmake:41 (include)\n'}
+[0.656369] (tutorial_interfaces) StderrLine: {'line': b'  CMakeLists.txt:38 (find_package)\n'}
+[0.656423] (tutorial_interfaces) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.656474] (tutorial_interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[0.656516] (tutorial_interfaces) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/foxy/share/connext_cmake_module/cmake/Modules/FindConnext.cmake:163 (list):\n'}
+[0.656559] (tutorial_interfaces) StderrLine: {'line': b'  Policy CMP0121 is not set: The list() command now validates parsing of\n'}
+[0.656602] (tutorial_interfaces) StderrLine: {'line': b'  index arguments.  Run "cmake --help-policy CMP0121" for policy details.\n'}
+[0.656645] (tutorial_interfaces) StderrLine: {'line': b'  Use the cmake_policy command to set the policy and suppress this warning.\n'}
+[0.656688] (tutorial_interfaces) StderrLine: {'line': b'  Invalid list index "libnddscppd.so".\n'}
+[0.656730] (tutorial_interfaces) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.656773] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/connext_cmake_module/cmake/Modules/FindConnext.cmake:199 (_count_found_libraries)\n'}
+[0.656815] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_typesupport_connext_c/cmake/rosidl_typesupport_connext_c-extras.cmake:5 (find_package)\n'}
+[0.656860] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_typesupport_connext_c/cmake/rosidl_typesupport_connext_cConfig.cmake:41 (include)\n'}
+[0.656903] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_typesupport_c/cmake/rosidl_typesupport_c-extras.cmake:13 (find_package)\n'}
+[0.656948] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_typesupport_c/cmake/rosidl_typesupport_cConfig.cmake:41 (include)\n'}
+[0.656992] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_default_generators/cmake/rosidl_default_generators-extras.cmake:21 (find_package)\n'}
+[0.657035] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_default_generators/cmake/rosidl_default_generatorsConfig.cmake:41 (include)\n'}
+[0.657077] (tutorial_interfaces) StderrLine: {'line': b'  CMakeLists.txt:38 (find_package)\n'}
+[0.657119] (tutorial_interfaces) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.657162] (tutorial_interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[0.657205] (tutorial_interfaces) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /opt/ros/foxy/share/connext_cmake_module/cmake/Modules/FindConnext.cmake:163 (list):\n'}
+[0.657248] (tutorial_interfaces) StderrLine: {'line': b'  Policy CMP0121 is not set: The list() command now validates parsing of\n'}
+[0.657291] (tutorial_interfaces) StderrLine: {'line': b'  index arguments.  Run "cmake --help-policy CMP0121" for policy details.\n'}
+[0.657334] (tutorial_interfaces) StderrLine: {'line': b'  Use the cmake_policy command to set the policy and suppress this warning.\n'}
+[0.657377] (tutorial_interfaces) StderrLine: {'line': b'  Invalid list index "librticonnextmsgcppd.so".\n'}
+[0.657420] (tutorial_interfaces) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.657463] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/connext_cmake_module/cmake/Modules/FindConnext.cmake:199 (_count_found_libraries)\n'}
+[0.657508] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_typesupport_connext_c/cmake/rosidl_typesupport_connext_c-extras.cmake:5 (find_package)\n'}
+[0.657552] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_typesupport_connext_c/cmake/rosidl_typesupport_connext_cConfig.cmake:41 (include)\n'}
+[0.657595] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_typesupport_c/cmake/rosidl_typesupport_c-extras.cmake:13 (find_package)\n'}
+[0.657638] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_typesupport_c/cmake/rosidl_typesupport_cConfig.cmake:41 (include)\n'}
+[0.657681] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_default_generators/cmake/rosidl_default_generators-extras.cmake:21 (find_package)\n'}
+[0.657725] (tutorial_interfaces) StderrLine: {'line': b'  /opt/ros/foxy/share/rosidl_default_generators/cmake/rosidl_default_generatorsConfig.cmake:41 (include)\n'}
+[0.657768] (tutorial_interfaces) StderrLine: {'line': b'  CMakeLists.txt:38 (find_package)\n'}
+[0.657813] (tutorial_interfaces) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.657858] (tutorial_interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[0.657901] (tutorial_interfaces) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at /home/doe/dev_ws/build/tutorial_interfaces/connext_cmake_module/check_abi/CMakeLists.txt:15 (cmake_minimum_required):\n'}
+[0.657944] (tutorial_interfaces) StderrLine: {'line': b'  Compatibility with CMake < 2.8.12 will be removed from a future version of\n'}
+[0.657988] (tutorial_interfaces) StderrLine: {'line': b'  CMake.\n'}
+[0.658031] (tutorial_interfaces) StderrLine: {'line': b'\n'}
+[0.658073] (tutorial_interfaces) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[0.658116] (tutorial_interfaces) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[0.658158] (tutorial_interfaces) StderrLine: {'line': b'\n'}
+[0.658202] (tutorial_interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[0.700614] (-) TimerEvent: {}
+[0.800930] (-) TimerEvent: {}
+[0.901204] (-) TimerEvent: {}
+[1.001443] (-) TimerEvent: {}
+[1.101698] (-) TimerEvent: {}
+[1.201987] (-) TimerEvent: {}
+[1.261816] (tutorial_interfaces) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[1.276089] (tutorial_interfaces) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/foxy/include  \n'}
+[1.302080] (-) TimerEvent: {}
+[1.313157] (tutorial_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_connext_cpp;rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.328105] (tutorial_interfaces) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/foxy/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:64 (message):\n'}
+[1.328259] (tutorial_interfaces) StderrLine: {'line': b'  rosidl_generate_interfaces() must be called before ament_package()\n'}
+[1.328325] (tutorial_interfaces) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[1.328405] (tutorial_interfaces) StderrLine: {'line': b'  CMakeLists.txt:40 (rosidl_generate_interfaces)\n'}
+[1.328459] (tutorial_interfaces) StderrLine: {'line': b'\n'}
+[1.328512] (tutorial_interfaces) StderrLine: {'line': b'\x1b[0m\n'}
+[1.328562] (tutorial_interfaces) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[1.328617] (tutorial_interfaces) StdoutLine: {'line': b'See also "/home/doe/dev_ws/build/tutorial_interfaces/CMakeFiles/CMakeOutput.log".\n'}
+[1.331310] (tutorial_interfaces) CommandEnded: {'returncode': 1}
+[1.349037] (tutorial_interfaces) JobEnded: {'identifier': 'tutorial_interfaces', 'rc': 1}
+[1.359417] (-) EventReactorShutdown: {}

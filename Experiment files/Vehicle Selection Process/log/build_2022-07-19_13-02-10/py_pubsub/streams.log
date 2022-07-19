@@ -1,0 +1,39 @@
+[1.680s] Invoking command in '/home/doe/dev_ws/src/py_pubsub': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/doe/dev_ws/install/py_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /home/doe/anaconda3/bin/python setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/doe/dev_ws/build/py_pubsub/build install --prefix /home/doe/dev_ws/install/py_pubsub --record /home/doe/dev_ws/build/py_pubsub/install.log --single-version-externally-managed
+[1.860s] /home/doe/anaconda3/lib/python3.8/site-packages/setuptools/dist.py:757: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[1.860s]   warnings.warn(
+[1.860s] /home/doe/anaconda3/lib/python3.8/site-packages/setuptools/dist.py:757: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[1.860s]   warnings.warn(
+[2.227s] running egg_info
+[2.275s] writing ../../build/py_pubsub/py_pubsub.egg-info/PKG-INFO
+[2.304s] writing dependency_links to ../../build/py_pubsub/py_pubsub.egg-info/dependency_links.txt
+[2.392s] writing entry points to ../../build/py_pubsub/py_pubsub.egg-info/entry_points.txt
+[2.451s] writing requirements to ../../build/py_pubsub/py_pubsub.egg-info/requires.txt
+[2.481s] writing top-level names to ../../build/py_pubsub/py_pubsub.egg-info/top_level.txt
+[2.532s] reading manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[2.533s] writing manifest file '../../build/py_pubsub/py_pubsub.egg-info/SOURCES.txt'
+[2.533s] running build
+[2.533s] running build_py
+[2.533s] copying py_pubsub/vehicle_data.py -> /home/doe/dev_ws/build/py_pubsub/build/lib/py_pubsub
+[2.533s] copying py_pubsub/subscriber_member_function.py -> /home/doe/dev_ws/build/py_pubsub/build/lib/py_pubsub
+[2.533s] copying py_pubsub/publisher_member_function.py -> /home/doe/dev_ws/build/py_pubsub/build/lib/py_pubsub
+[2.533s] running install
+[2.533s] /home/doe/anaconda3/lib/python3.8/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[2.533s]   warnings.warn(
+[2.537s] running install_lib
+[2.577s] copying /home/doe/dev_ws/build/py_pubsub/build/lib/py_pubsub/vehicle_data.py -> /home/doe/dev_ws/install/py_pubsub/lib/python3.8/site-packages/py_pubsub
+[2.577s] copying /home/doe/dev_ws/build/py_pubsub/build/lib/py_pubsub/subscriber_member_function.py -> /home/doe/dev_ws/install/py_pubsub/lib/python3.8/site-packages/py_pubsub
+[2.577s] copying /home/doe/dev_ws/build/py_pubsub/build/lib/py_pubsub/publisher_member_function.py -> /home/doe/dev_ws/install/py_pubsub/lib/python3.8/site-packages/py_pubsub
+[2.577s] byte-compiling /home/doe/dev_ws/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/vehicle_selection.py to vehicle_selection.cpython-38.pyc
+[2.577s] Sorry: IndentationError: expected an indented block (vehicle_selection.py, line 22)
+[2.577s] byte-compiling /home/doe/dev_ws/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/vehicle_data.py to vehicle_data.cpython-38.pyc
+[2.578s] byte-compiling /home/doe/dev_ws/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/subscriber_member_function.py to subscriber_member_function.cpython-38.pyc
+[2.578s] byte-compiling /home/doe/dev_ws/install/py_pubsub/lib/python3.8/site-packages/py_pubsub/publisher_member_function.py to publisher_member_function.cpython-38.pyc
+[2.578s] running install_data
+[2.589s] running install_egg_info
+[2.629s] removing '/home/doe/dev_ws/install/py_pubsub/lib/python3.8/site-packages/py_pubsub-0.0.0-py3.8.egg-info' (and everything under it)
+[2.629s] Copying ../../build/py_pubsub/py_pubsub.egg-info to /home/doe/dev_ws/install/py_pubsub/lib/python3.8/site-packages/py_pubsub-0.0.0-py3.8.egg-info
+[2.630s] running install_scripts
+[2.719s] Installing listener script to /home/doe/dev_ws/install/py_pubsub/lib/py_pubsub
+[2.719s] Installing talker script to /home/doe/dev_ws/install/py_pubsub/lib/py_pubsub
+[2.719s] writing list of installed files to '/home/doe/dev_ws/build/py_pubsub/install.log'
+[2.741s] Invoked command in '/home/doe/dev_ws/src/py_pubsub' returned '0': CONDA_PROMPT_MODIFIER=(base) PYTHONPATH=/home/doe/dev_ws/install/py_pubsub/lib/python3.8/site-packages:${PYTHONPATH} /home/doe/anaconda3/bin/python setup.py egg_info --egg-base ../../build/py_pubsub build --build-base /home/doe/dev_ws/build/py_pubsub/build install --prefix /home/doe/dev_ws/install/py_pubsub --record /home/doe/dev_ws/build/py_pubsub/install.log --single-version-externally-managed
